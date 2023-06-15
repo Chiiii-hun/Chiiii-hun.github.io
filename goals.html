@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+     <title> Goals </title>
+        <style>
+            body {
+            font-family: "Lato", sans-serif;
+         }
+ 
+         .sidenav {
+             height: 100%;
+             width: 160px;
+             position: fixed;
+             z-index: 1;
+             top: 0;
+             left: 0;
+             background-color: #111;
+             overflow-x: hidden;
+             transition: 0.5s;
+             padding-top: 60px;
+            }
+ 
+            .sidenav a {
+             padding: 8px 8px 8px 32px;
+             text-decoration: none;
+             font-size: 25px;
+             color: #818181;
+             display: block;
+             transition: 0.3s;
+             }
+ 
+            .sidenav a:hover {
+             color: #f1f1f1;
+             }
+
+             .sidenac .closebtn{
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+             }
+ 
+ 
+            @media screen and (max-height: 450px) {
+             .sidenav {padding-top: 15px;}
+             .sidenav a {font-size: 18px;}
+            }
+        </style>
+    </head>
+        <body>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="mla.html"> Mla</a>
+                <a href="goals.html">Goals</a>
+                <a href="project.html">Project</a>
+                <a href="process.html">Process</a>
+                <a href="careers.html">Careers</a>
+                <a href="reflection.html">Reflection</a>
+                <a href="index.html">Home</a>
+            </div>
+
+            <span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; Chapters</span>
+
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+
+            <div class="main">
+                <h1>Goals</h1>
+    
+            <p>
+                My original goals were:
+                <ul>
+                    <li><p>To be able to create a functioning game without bugs.</p></li></a>
+                    <li><p>The game should be easy for the player to navigate through.</p></li>
+                    <li><p>The website should be easy to naviagte through and clearly state the process </p></li>
+                    <li><p>The game should not contain any copied code </p></li>
+                    <li><p>The student should debugg on their own before seeking help externaly</p></li>
+                </ul>
+            </p>
+
+            <p>
+                I was able to create a functioning game and I think the game is easy to navigate through, however, I cannot guarantee
+                that it program contain no copied code as I did follow tutorials. On the other hand, I think my website have met my goals
+                as it is not hard to use and my process includes code to help the reader understand. 
+            </p>
+
+            
+            </div>
+                 
+        </body>
+</html>

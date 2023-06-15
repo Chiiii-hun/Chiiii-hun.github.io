@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+   <head>
+      <title> MLA and Resources </title>
+    
+      <style>
+         body {
+            font-family: "Lato", sans-serif;
+         }
+ 
+         .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+         }
+ 
+         .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+         }
+ 
+         .sidenav a:hover {
+            color: #f1f1f1;
+         }
+
+         .sidenac .closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+         }
+ 
+ 
+         @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+         }
+      </style>
+   </head>
+        <body>
+            <div id="mySidenav" class="sidenav">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <a href="mla.html"> Mla</a>
+             <a href="goals.html">Goals</a>
+             <a href="project.html">Project</a>
+             <a href="process.html">Process</a>
+             <a href="careers.html">Careers</a>
+             <a href="reflection.html">Reflection</a>
+             <a href="index.html">Home</a>
+            </div>
+
+            <span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; Chapters</span>
+
+             <script>
+                 function openNav() {
+                 document.getElementById("mySidenav").style.width = "250px";
+                 }
+
+                 function closeNav() {
+                 document.getElementById("mySidenav").style.width = "0";
+                 }
+             </script>
+
+            <div class="main">
+                <h1>MLA and Resources</h1>
+               
+                <h4>Video scources</h4>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/_Rj3av74FHk" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+
+                
+                <h4>Website sources</h4>
+                <p>
+                 <a href = "https://quirkycort.github.io/tutorials/20-Pygame-Zero-Basics/10-Intro/10-intro.html">
+                    Pygame Zero Basics website</a> This website is where most of my sources are from,
+                    it provide an introduction to Pygame Zero which I followed. I also followed the 
+                    tutorials for 'Gem Catcher' to set the foundations of my game. In the tutorial 
+                    for 'Grab the Coin' I discovered how to draw a background image.
+                <br>
+                 <a href="http://programarcadegames.com/python_examples/show_file.php?file=high_score.py">
+                    Program arcade games website</a> I use the code from the website to work out how to 
+                    make my game report the high score from a text file.
+                <br>
+                 <a href="https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/">
+                    Python exit commands</a> I learned how to exit python from the website.
+                <br>
+                 <a href="https://stackoverflow.com/questions/57581656/repeated-key-detection-in-pygame-zero">
+                    key detection in pygame</a> I learned how to use keys on the keyboard in my code.
+                </p>
+
+                <p>
+                    To differ my game from the tutorial, I changed the theme of the 
+                    game and used characters I created. I also added a timer, high score 
+                    and a exit game button.
+                </p>
+                
+            
+            </div>      
+        </body>
+</html>
