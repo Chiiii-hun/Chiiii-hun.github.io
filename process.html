@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+   <head>
+      <title> Process </title>
+    
+      <style>
+         body {
+            font-family: "Lato", sans-serif;
+         }
+ 
+         .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+         }
+ 
+         .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+         }
+ 
+         .sidenav a:hover {
+            color: #f1f1f1;
+         }
+
+         .sidenac .closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+         }
+
+         
+         /* image gallery*/
+         body {
+          font-family: Arial;
+          margin: 0;
+         }
+
+         * {
+          box-sizing: border-box;
+         }
+
+         img {
+          vertical-align: middle;
+         }
+
+         /* Position the image container (needed to position the left and right arrows) */
+         .container {
+           position: relative;
+         }
+
+         /* Hide the images by default */
+         .mySlides {
+           display: none;
+         }
+
+         /* Add a pointer when hovering over the thumbnail images */
+         .cursor {
+           cursor: pointer;
+         }
+
+         /* Next & previous buttons */
+         .prev,
+         .next {           
+           cursor: pointer;
+           position: absolute;
+           top: 40%;
+           width: auto;
+           padding: 16px;
+           margin-top: -50px;
+           color: white;
+           font-weight: bold;
+           font-size: 20px;
+           border-radius: 0 3px 3px 0;
+           user-select: none;
+           -webkit-user-select: none;
+         }
+
+         /* Position the "next button" to the right */
+         .next {
+           right: 0;
+           border-radius: 3px 0 0 3px;
+         }
+
+         /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+
+
+
+         /* Number text (1/3 etc) */
+         .numbertext {
+           color: #f2f2f2;
+           font-size: 12px;
+           padding: 8px 12px;
+           position: absolute;
+           top: 0;
+          }
+
+         /* Container for image text */
+         .caption-container {
+           text-align: center;
+           background-color: #222;
+           padding: 16px 16px;
+           color: white;
+         }
+
+         .row:after {
+           content: "";
+           display: table;
+           clear: both;
+         }
+
+         /* Six columns side by side */
+         .column {
+           float: left;
+           width: 30%;
+         }
+
+         /* Add a transparency effect for thumnbail images */
+         .demo {
+           opacity: 0.6;
+         }
+
+         .active,
+         .demo:hover {
+          opacity: 1;
+         }
+      </style>
+   </head>
+      
+   <body>
+
+       
+                                          
+ 
+         
+       <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="mla.html"> Mla</a>
+          <a href="goals.html">Goals</a>
+          <a href="project.html">Project</a>
+          <a href="process.html">Process</a>
+          <a href="careers.html">Careers</a>
+          <a href="reflection.html">Reflection</a>
+       </div>
+
+       <span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; Chapters</span>
+
+      <script>
+       function openNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+       }
+
+       function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+         }
+      </script>
+
+    <h1>Process</h1>
+             
+
+        <div class="main">
+                
+               
+                <h4>Sketching</h4>
+                <div class="container">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="game_bg.png" style="width:100%">
+                 </div>
+          
+                <div class="mySlides">
+                 <div class="numbertext">2 / 3</div>
+                 <img src="song.png" style="width:100%">
+                </div>
+          
+                <div class="mySlides">
+                 <div class="numbertext">3 / 3</div>
+                 <img src="shell.png" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+          
+                <div class="caption-container">
+                 <p id="caption"></p>
+                </div>
+          
+                <div class="row">
+                 <div class="column">
+                  <img class="demo cursor" src="game_bg.png" style="width:100%" onclick="currentSlide(1)" alt="The game background image">
+                 </div>
+                 <div class="column">
+                   <img class="demo cursor" src="song.png" style="width:100%" onclick="currentSlide(2)" alt="The character image">
+                 </div>
+                 <div class="column">
+                   <img class="demo cursor" src="shell.png" style="width:100%" onclick="currentSlide(3)" alt="The object image">
+                 </div>
+                 </div>
+                </div>
+          
+                <script>
+                 let slideIndex = 1;
+                 showSlides(slideIndex);
+          
+                   function plusSlides(n) {
+                   showSlides(slideIndex += n);
+                   }
+          
+                   function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                   }
+          
+                 function showSlides(n) {
+                 let i;
+                 let slides = document.getElementsByClassName("mySlides");
+                 let dots = document.getElementsByClassName("demo");
+                 let captionText = document.getElementById("caption");
+                 if (n > slides.length) {slideIndex = 1}
+                 if (n < 1) {slideIndex = slides.length}
+                 for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                   }     
+                   for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                   }
+          
+                   slides[slideIndex-1].style.display = "block";
+                   dots[slideIndex-1].className += " active";
+                   captionText.innerHTML = dots[slideIndex-1].alt;
+                   }
+                </script>
+                
+                <h4></h4>
+                <p>
+                
+                </p>
+                
+            
+      </div>      
+   </body>
+</html>
